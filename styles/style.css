@@ -123,10 +123,6 @@ h4 {
   }
 }
 
-#welcome-section, #projects, #contact {
-  padding: 10px;
-}
-
 #welcome-section {
   height: 100vh;
   background-color: #003049;
@@ -233,14 +229,23 @@ h4 {
 }
 
 #projects {
+  margin: 200px auto 0;
   color: #000000;
   padding: 0;
 }
 
 #projects h2 {
   margin: 0;
-  padding: 50px 10px;
+  padding: 0;
   font-weight: bold;
+  text-align: center;
+}
+
+#projects h3.project-info {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 .project-container {
@@ -294,12 +299,12 @@ h4 {
 
 .project-card .background {
   position: absolute;
-  bottom: -120px;
+  bottom: -130px;
   z-index: 0;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  max-height: 0%;
-  height: 1px;
+  max-height: 66%;
+  height: 340px;
   width: 100%;
 }
 
@@ -310,7 +315,6 @@ h4 {
 
 .project-card:hover .background {
   max-height: 150%;
-  height: 340px;
 }
 
 .project-card.proj1 {
@@ -325,7 +329,7 @@ h4 {
   background-image: url("../Images/sampleProj3.jpg");
 }
 
-.project-card.proj3:hover .card-content {
+.project-card.proj3 .card-content {
   color: #000000;
 }
 
@@ -341,13 +345,25 @@ h4 {
   background-image: url("../Images/sampleProj6.jpg");
 }
 
-.project-card.proj6:hover .card-content {
+.project-card.proj6 .card-content {
   color: #000000;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   #projects .project-card {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  #projects {
+    max-width: 1220px;
+  }
+  #projects h2, #projects h3.project-info {
+    padding-left: 0;
+  }
+  #projects .project-card {
+    max-width: 600px;
   }
 }
 
