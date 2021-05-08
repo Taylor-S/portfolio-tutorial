@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio from Scratch</title>
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <nav id="navbar">
+      <a href="#welcome-section">About</a>
+      |
+      <a href="#projects">Projects</a>
+      |
+      <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="welcome-section">
+    <div class="info">
+      <h1>Hi there, <br>I'm <span>John Smith</span></h1>
+      <h4>Web Developer | Full-Stack | Problem Solver</h4>
+      <p>Web Developer | Full-Stack | Problem Solver</p>
+      <a href="#contact" class="btn">
+        Contact me!
+      </a>
+    </div>
+
+    <div class="portfolio-pic">
+      <img src="./Images/Avatar-PNG-Pic.png" alt="Picture of John Smith">
+    </div>
+    
+    <span class="scrollDown">
+      <i class="fas fa-long-arrow-alt-down"></i>
+      <a href="#projects">Scroll Down</a>
+      <i class="fas fa-long-arrow-alt-down"></i>
+    </span>
+  </header>
+    
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card proj1" onclick="goToProject('project1')">
+          <div class="card-content">
+            <span>Website</span>
+            <h3>Sample Project 1</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          </div>
+          <div class="background skew background-secondary"></div>
+        </div>
+
+        <div class="project-card proj2" onclick="goToProject('project2')">
+            <div class="card-content reverse">
+              <span>Website</span>
+              <h3>Sample Project 2</h3>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+            <div class="background skew reverse background-primary"></div>
+        </div>
+
+        <div class="project-card proj3" onclick="goToProject('project3')">
+          <div class="card-content">
+            <span>Website</span>
+            <h3>Sample Project 3</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          </div>
+          <div class="background skew background-tertiary"></div>
+        </div>
+
+        <div class="project-card proj4" onclick="goToProject('project4')">
+          <div class="card-content reverse">
+            <span>Website</span>
+            <h3>Sample Project 4</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          </div>
+          <div class="background skew reverse background-secondary"></div>
+        </div>
+
+        <div class="project-card proj5" onclick="goToProject('project5')">
+          <div class="card-content">
+            <span>Website</span>
+            <h3>Sample Project 5</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          </div>
+          <div class="background skew background-primary"></div>
+        </div>
+
+        <div class="project-card proj6" onclick="goToProject('project6')">
+          <div class="card-content reverse">
+            <span>Website</span>
+            <h3>Sample Project 6</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          </div>
+          <div class="background skew reverse background-tertiary"></div>
+        </div>
+    </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a id="profile-link-fb" href="fb_link">FB LINK</a>
+        <a id="profile-link-git" href="github_link">GITHB LINK</a>
+        <a id="profile-link-yt" href="youtube_link">YT LINK</a>
+      </div>
+    </section>
+  </main>
+    
+  <footer class="footer">
+    <p>** Feel free to use and customise this for your own portfolio!</p>
+    
+    <p>
+      &copy; Created by
+      <a href="#tasch" target="_blank">TASCH</a>
+    </p>
+  </footer>
+  
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+

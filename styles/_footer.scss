@@ -1,0 +1,16 @@
+.footer {
+    background-color: $secondary;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    p {
+      margin: 0;
+    }
+    
+    a {
+      color: white;
+    }
+}

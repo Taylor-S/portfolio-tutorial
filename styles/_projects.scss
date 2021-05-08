@@ -1,0 +1,114 @@
+#projects {
+    color: #000000;
+    padding: 0;
+    
+    h2 {
+      margin: 0;
+      padding: 50px 10px;
+      font-weight: bold;
+    }
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 20px 20px 10px;
+      z-index: 1;
+      transform: translateY(60%);
+      transition: all 0.2s ease-in-out;
+      color: #ffffff;
+  
+      h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+  
+      p {
+        margin-top: 15px;
+      }
+  
+      &.reverse {
+        text-align: right;
+      }
+  
+    }
+  
+    .background {
+      position: absolute;
+      bottom: -120px;
+      z-index: 0;
+      transition: all .2s ease-in-out;
+      max-height: 0%;
+      height: 1px;
+      width: 100%;
+    }
+  
+    &:hover {
+      .card-content {
+        transform: translateY(0%);
+      }
+  
+      .background {
+        max-height: 150%;
+        height: 340px;
+      }
+    }
+  
+    &.proj1 {
+      background-image: url('../Images/sampleProj1.jpg');
+    }
+    &.proj2 {
+      background-image: url('../Images/sampleProj2.jpg');
+    }
+    &.proj3 {
+      background-image: url('../Images/sampleProj3.jpg');
+      &:hover {
+        .card-content { 
+          color: #000000; 
+        }
+      }
+    }
+    &.proj4 {
+      background-image: url('../Images/sampleProj4.jpg');
+    }
+    &.proj5 {
+      background-image: url('../Images/sampleProj5.jpg');
+    }
+    &.proj6 {
+      background-image: url('../Images/sampleProj6.jpg');
+      &:hover {
+        .card-content { 
+          color: #000000; 
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 500px) {  
+}
+
+@media screen and (min-width: 800px) {
+    #projects {
+        .project-card {
+        width: 50%;
+        }  
+    }
+}
