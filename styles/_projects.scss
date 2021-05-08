@@ -48,9 +48,21 @@
         margin: 0;
         font-weight: bold;
       }
+
+      h4 {
+        margin-bottom: 25px;
+      }
   
       p {
         margin-top: 15px;
+      }
+
+      .project-links {
+        margin-bottom: 15px;
+
+        a {
+          margin: 0 5px;
+        }
       }
   
       &.reverse {
@@ -87,8 +99,11 @@
     }
     &.proj3 {
       background-image: url('../Images/sampleProj3.jpg');
-      .card-content {
+      .card-content, a {
         color: #000000; 
+      }
+      .btn.outline {
+        border: 2px solid #000000;
       }
     }
     &.proj4 {
@@ -99,8 +114,11 @@
     }
     &.proj6 {
       background-image: url('../Images/sampleProj6.jpg');
-      .card-content {
+      .card-content, a {
         color: #000000; 
+      }
+      .btn.outline {
+        border: 2px solid #000000;
       }
     }
 }

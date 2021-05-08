@@ -45,9 +45,9 @@ h4 {
   opacity: 1;
 }
 
-.btn.secondary {
+.btn.outline {
   background-color: transparent;
-  color: #D62828;
+  border: 2px solid #ffffff;
 }
 
 .btn, .project-card {
@@ -293,8 +293,20 @@ a {
   font-weight: bold;
 }
 
+.project-card .card-content h4 {
+  margin-bottom: 25px;
+}
+
 .project-card .card-content p {
   margin-top: 15px;
+}
+
+.project-card .card-content .project-links {
+  margin-bottom: 15px;
+}
+
+.project-card .card-content .project-links a {
+  margin: 0 5px;
 }
 
 .project-card .card-content.reverse {
@@ -333,8 +345,12 @@ a {
   background-image: url("../Images/sampleProj3.jpg");
 }
 
-.project-card.proj3 .card-content {
+.project-card.proj3 .card-content, .project-card.proj3 a {
   color: #000000;
+}
+
+.project-card.proj3 .btn.outline {
+  border: 2px solid #000000;
 }
 
 .project-card.proj4 {
@@ -349,8 +365,12 @@ a {
   background-image: url("../Images/sampleProj6.jpg");
 }
 
-.project-card.proj6 .card-content {
+.project-card.proj6 .card-content, .project-card.proj6 a {
   color: #000000;
+}
+
+.project-card.proj6 .btn.outline {
+  border: 2px solid #000000;
 }
 
 @media screen and (min-width: 700px) {

@@ -47,9 +47,9 @@ h4 {
   }
 }
 
-.btn.secondary {
+.btn.outline {
   background-color: transparent;
-  color: $secondary;
+  border: 2px solid #ffffff;
 }
 
 .btn, .project-card {
