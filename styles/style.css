@@ -54,6 +54,10 @@ h4 {
   font-weight: bold;
 }
 
+a {
+  color: #ffffff;
+}
+
 .skew {
   -webkit-transform: skew(0, 15deg);
           transform: skew(0, 15deg);
@@ -150,6 +154,7 @@ h4 {
 #welcome-section h1 {
   font-weight: 200;
   margin: 0 0 0 0;
+  color: #EAE2B7;
 }
 
 #welcome-section h1 span {
@@ -243,8 +248,7 @@ h4 {
 
 #projects h3.project-info {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 100px;
+  padding: 10px 10px 100px;
   text-align: center;
 }
 
@@ -371,21 +375,72 @@ h4 {
   background-color: #003049;
 }
 
-.footer {
-  background-color: #D62828;
-  padding-top: 15px;
-  padding-bottom: 15px;
+#contact h2 {
+  margin: 0;
+  padding: 100px 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#contact .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px 50px;
+}
+
+#contact .email-section {
+  padding: 0 0 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#contact .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5em;
+}
+
+#contact .social-links .profile-link {
+  padding: 10px;
+  text-decoration: none;
+}
+
+#contact .social-links .profile-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #D62828;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .footer p {
-  margin: 0;
+  margin: 10px;
 }
 
 .footer a {

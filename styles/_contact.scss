@@ -1,3 +1,43 @@
 #contact {
     background-color: $primary;
+
+    h2 {
+        margin: 0;
+        padding: 100px 10px 20px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 10px 50px;
+    }
+
+    .email-section {
+        padding: 0 0 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1.5em;
+        
+
+        .profile-link {
+            padding: 10px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
